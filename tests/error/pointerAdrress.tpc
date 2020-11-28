@@ -1,0 +1,5 @@
+int main(void){
+	int * b;
+	b = &b;
+	return 0;
+}

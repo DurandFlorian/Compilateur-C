@@ -1,0 +1,5 @@
+int main(void){
+	char c;
+	reade(c);
+	return 0;
+}

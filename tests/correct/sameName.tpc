@@ -1,0 +1,14 @@
+int test;
+
+int testfunction(int test){
+	if(test==1){
+		test=4;
+	}
+	return test;
+}
+
+int main(void){
+	test=1;
+	print(testfunction(test));
+	return 0;
+}

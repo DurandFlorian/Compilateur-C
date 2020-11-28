@@ -1,0 +1,62 @@
+/* gen-code-types.tpc */
+
+/* Test file for TPC */
+  int somme,produit,quotient,reste,difference ;
+  char letter, digit, punct;
+	int *p_compteur;
+	int indice, *p_indice;
+
+int paf(int a){
+  print('A');
+  return a;
+}
+
+int test(int a){
+  int b;
+  b=5;
+  return paf(a);
+}
+    
+int main(void)  { 
+   int i;
+   print(-1<=2);
+   if(1 || 0){
+    print(4);
+   }
+   i=-5;
+   while(i<0){
+
+    print(i);
+    i=i+1;
+   }
+   print(0 && 1);
+   print(1 || 1);
+   print(4>3);
+   print(3>=3);
+   print(2!=1);
+   print(3<4);
+   print(5<=4);
+   print(4==4);
+   print(!2);
+   print(!0);
+   print('\n');
+   reste=24%5;
+   print(reste);
+   print('\n');
+   print(test(reste));
+   print('\n');
+   produit=10*5;
+   print(produit);
+   somme=12;
+   p_compteur=&somme;
+   print(*p_compteur);
+   produit=24;
+   quotient=24/12;
+   letter='c';
+   digit='0';
+   letter=letter+('A'-'a');
+   print(quotient);
+   print(letter);
+   print('\n');
+   return 0;
+}

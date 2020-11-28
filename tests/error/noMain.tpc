@@ -1,0 +1,3 @@
+int plop(void){
+	return 1;
+}

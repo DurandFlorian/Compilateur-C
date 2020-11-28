@@ -1,0 +1,4 @@
+int main (int){
+	/* my main return 0 */
+	return 0;
+}

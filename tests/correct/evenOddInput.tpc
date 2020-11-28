@@ -1,0 +1,17 @@
+int main(void){
+	int number;
+	reade(number);
+	if(number%2==0){
+		print('e');
+		print('v');
+		print('e');
+		print('n');
+		print('\n');
+	}else{
+		print('o');
+		print('d');
+		print('d');
+		print('\n');
+	}
+	return 0;
+}

@@ -1,0 +1,11 @@
+int test(void){
+	return 15;
+}
+
+char test(void){
+	return '&';
+}
+
+int main(void){
+	return 0;
+}

@@ -1,0 +1,54 @@
+int integer;
+char character;
+int * integer_pointer;
+char * char_pointer;
+
+void printAll(int i,char c,int * ip,char * cp){
+	int vi,*vip;
+	char vc,* vcp;
+	vi=i;
+	vc=c;
+	vip=ip;
+	vcp=cp;
+	print(i);
+	print('\n');
+	print(*ip);
+	print('\n');
+	print(c);
+	print('\n');
+	print(*cp);
+	print('\n');
+	print(vi);
+	print('\n');
+	print(*vip);
+	print('\n');
+	print(vc);
+	print('\n');
+	print(*vcp);
+}
+
+char * returnCP(char * c){
+	return c;
+}
+
+int * returnIP(int * i){
+	return i;
+}
+
+void returnVoid(void){
+}
+
+int main(void){
+	character='b';
+	char_pointer=&character;
+	integer=-65*4/-3;
+	integer_pointer=&integer;
+	printAll(integer,character,integer_pointer,char_pointer);
+	char_pointer=returnCP(char_pointer);
+	character=*returnCP(char_pointer);
+	integer_pointer=returnIP(integer_pointer);
+	integer=*returnIP(integer_pointer);
+	print('\n');
+	printAll(integer,character,integer_pointer,char_pointer);
+	returnVoid();
+}

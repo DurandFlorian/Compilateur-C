@@ -1,0 +1,82 @@
+int a,b,c,d,e,f;
+
+void init_variables(void){
+	a=30;
+	b=76;
+	c=26;
+	d=80;
+	e=9;
+	f=15;
+}
+
+void maxMinAvg(void){
+	int i, max,min,sum;
+	i=0;
+	min=100;
+	max=0;
+	sum=0;
+	init_variables();
+	while(i<6){
+		if(!i){
+			if(a>max){
+				max = a;
+			}
+			if(a<min){
+				min = a;
+			}
+			sum=sum+a;
+		}else if(i==1){
+			if(b>max){
+				max=b;
+			}
+			if(b<min){
+				min = b;
+			}
+			sum=sum+b;
+		}else if(i==2){
+			if(c>max){
+				max=c;
+			}
+			if(c<min){
+				min = c;
+			}
+			sum=sum+c;
+		}else if(i==3){
+			if(d>max){
+				max=d;
+			}
+			if(d<min){
+				min = d;
+			}
+			sum=sum+d;
+		}else if(i==4){
+			if(e>max){
+				max=e;
+			}
+			if(e<min){
+				min = e;
+			}
+			sum=sum+e;
+		}else if(f==1){
+			if(f>max){
+				max=f;
+			}
+			if(f<min){
+				min = f;
+			}
+			sum=sum+f;
+		}
+		i=i+1;
+	}
+	print(max);
+	print('\n');
+	print(min);
+	print('\n');
+	print(sum/6);
+	print('\n');
+}
+
+int main(void){
+	maxMinAvg();
+	return 0;
+}
